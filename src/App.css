@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Inter:wght@200;300;400;500;600&display=swap');
+
+
+.responsive-box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 2rem;
+}
+
+.twoFr_oneFr{
+  grid-template-columns: 2fr 1fr;
+  column-gap: 1rem;
+
+}
