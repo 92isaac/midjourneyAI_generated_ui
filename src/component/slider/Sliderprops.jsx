@@ -1,10 +1,8 @@
 import React from 'react'
 
-const Sliderprops = ({img, id}) => {
+const Sliderprops = ({img}) => {
   return (
-    <div>
-        <img width="100%" src={img} className='aspect-video' alt='img' />
-    </div>
+        <img src={img} className='aspect-video w-full' alt='img' />
   )
 }
 

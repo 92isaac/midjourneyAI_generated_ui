@@ -4,7 +4,7 @@ import { products } from '../../data/data'
 
 const Fourprodtslice = () => {
   return (
-    <div className='relative'>
+    <div className='md:relative'>
         <h4>New Arrivals</h4>
         <div className="responsive-box">
             {products.slice(0,4).map((product, index)=>(<div key={index}>

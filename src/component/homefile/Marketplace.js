@@ -6,7 +6,7 @@ import Twoprodtslice from './Twoprodtslice'
 
 const Marketplace = () => {
   return (
-    <div className='ml-24 relative'>
+    <div className='md:ml-24 md:relative'>
     <div className='grid twoFr_oneFr '>
         <div className="first">
             <Threerowprodt />
