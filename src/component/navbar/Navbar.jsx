@@ -4,7 +4,7 @@ import {FaBars} from 'react-icons/fa'
 
 const Navbar = () => {
   return (
-    <nav className='flex justify-between md:mx-24 md:pt-6'>  
+    <nav className='flex justify-between mx-10 md:mx-24 md:pt-6'>  
         <Link to='/' className='text-2xl'>LOGO</Link>
 
         <ul className="hidden md:flex gap-5 ">
