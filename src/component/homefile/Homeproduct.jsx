@@ -4,7 +4,7 @@ import Productprops from '../products/Productprops'
 
 const Homeproduct = () => {
   return (
-    <div className='mx-6 my-10 md:my-6 md:mx-24 '>
+    <div className='mx-6 mt-10 mb-72 md:mt-6 md:mx-24 '>
         <h2 className='text-center'>New Arrivals: Shop the Latest and Greatest Products</h2>
         <div className="w-full responsive-box md:responsive-box mt-2">
             {products2.map((product)=>(<Productprops 
