@@ -14,6 +14,7 @@ export const products =[
         img:img1,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:1200,
+        amount:1,
 
     },
     {
@@ -22,6 +23,7 @@ export const products =[
         img:img2,
         desc:"Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:2599,
+        amount:1,
 
     },
     {
@@ -30,6 +32,7 @@ export const products =[
         img:img3,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam aperiam nostrum et magni modi ratione consequatur quam",
         price:700,
+        amount:1,
 
     },
     {
@@ -38,7 +41,7 @@ export const products =[
         img:img4,
         desc:"Lorem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:23,
-
+        amount:1,
     },
     {
         id:5,
@@ -46,6 +49,7 @@ export const products =[
         img:img5,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam et magni modi ratione consequatur quam",
         price:5607,
+        amount:1,
 
     },
     {
@@ -54,7 +58,7 @@ export const products =[
         img:img6,
         desc:"Lorem, ipsum dolor sit amet consecteturLorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:67,
-
+        amount:1,
     },
     {
         id:7,
@@ -62,6 +66,7 @@ export const products =[
         img:img7,
         desc:"Lorem, ipsum dolor sit amet conse Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam ctetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:107,
+        amount:1,
 
     },
     {
@@ -70,7 +75,7 @@ export const products =[
         img:img8,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:57,
-
+        amount:1,
     },
 ]
 export const products2 =[
@@ -80,6 +85,7 @@ export const products2 =[
         img:img1,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:1200,
+        amount:1,
 
     },
     {
@@ -88,6 +94,7 @@ export const products2 =[
         img:img2,
         desc:"Lorem, ipsum dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:2599,
+        amount:1,
 
     },
     {
@@ -96,6 +103,7 @@ export const products2 =[
         img:img3,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam aperiam nostrum et magni modi ratione consequatur quam",
         price:700,
+        amount:1,
 
     },
     {
@@ -104,7 +112,7 @@ export const products2 =[
         img:img4,
         desc:"Lorem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:23,
-
+        amount:1,
     },
     {
         id:5,
@@ -112,6 +120,7 @@ export const products2 =[
         img:img5,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam et magni modi ratione consequatur quam",
         price:5607,
+        amount:1,
 
     },
     {
@@ -120,7 +129,7 @@ export const products2 =[
         img:img6,
         desc:"Lorem, ipsum dolor sit amet consecteturLorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:67,
-
+        amount:1,
     },
     {
         id:7,
@@ -128,6 +137,7 @@ export const products2 =[
         img:img7,
         desc:"Lorem, ipsum dolor sit amet conse Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam ctetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:107,
+        amount:1,
 
     },
     {
@@ -136,7 +146,7 @@ export const products2 =[
         img:img8,
         desc:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam Repellat dolores reprehenderit corrupti aperiam nostrum et magni modi ratione consequatur quam",
         price:57,
-
+        amount:1,
     },
 ]
 

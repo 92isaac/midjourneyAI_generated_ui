@@ -23,8 +23,25 @@ export const AppProvider =({children})=>{
   const removeOneItem =(id)=>{
     dispatch({type:'REMOVE_ONE_ITEM', payload:id})
   }
+
+  const increase = (id)=>{
+    dispatch({type:'INCREASE', payload:id})
+  }
+
+  const decrease = (id)=>{
+    dispatch({type:'DECREASE', payload:id})
+  };
+
+
+  const globalData ={
+    ...state, 
+    clearCart, 
+    removeOneItem,
+    increase, 
+    decrease,
+  }
     
-    return <AppContext.Provider value={{...state, clearCart, removeOneItem}} >
+    return <AppContext.Provider value={globalData} >
         {children}
     </AppContext.Provider>
 }
