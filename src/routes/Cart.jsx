@@ -9,6 +9,7 @@ import "./cart.css";
 const Cart = () => {
   const { cart, total, clearCart } = useGlobalContext();
   const navigate = useNavigate();
+  console.log(cart)
   return (
     <div className="">
       <Navbar />

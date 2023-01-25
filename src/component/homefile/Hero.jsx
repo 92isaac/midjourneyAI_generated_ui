@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../navbar/Navbar'
 import Slider from '../slider/Slider'
+import heroimage from '../../asset/mid2.PNG'
 
 const Hero = () => {
   return (
@@ -14,7 +15,8 @@ const Hero = () => {
 
         <button className='bg-amber-400 px-10 py-2 my-4 rounded-lg'>Start shopping now</button>
         </div>
-            <Slider />
+        <img src={heroimage} alt="" className=" aspect-video"/>
+            {/* <Slider /> */}
     </div>
     </div>
   )

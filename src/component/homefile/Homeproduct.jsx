@@ -8,6 +8,7 @@ const Homeproduct = () => {
         <h2 className='text-center'>New Arrivals: Shop the Latest and Greatest Products</h2>
         <div className="w-full responsive-box md:responsive-box mt-2">
             {products2.map((product)=>(<Productprops 
+            id={product.id}
             key={product.id}
             title={product.name}
             img={product.img}
