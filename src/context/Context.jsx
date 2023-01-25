@@ -1,4 +1,4 @@
-import { createContext,  useContext, useReducer } from 'react';
+import { createContext,  useContext, useReducer, useEffect } from 'react';
 import { products } from '../data/data';
 import reducer from '../reducer/reducer';
 import { products_url as url } from '../data/Contant';
@@ -10,12 +10,17 @@ export const AppContext = createContext(null)
 
 
 const initialState ={
+  testproducts:[],
   cart:products,
   toggle:false,
   data:{name:'', email:'', password1:'',password2:''},
   total:0,
   amount:0,
   loading:false,
+  products_loading: false,
+  products_error: false,
+  featured_products: [],
+
 }
 
 export const AppProvider =({children})=>{
@@ -47,6 +52,9 @@ export const AppProvider =({children})=>{
     dispatch({type:'DECREASE', payload:id})
   };
 
+  useEffect(() => {
+    fetchProducts(url);
+  }, []);
 
   const globalData ={
     ...state, 
@@ -55,6 +63,7 @@ export const AppProvider =({children})=>{
     increase, 
     decrease,
   }
+  
     
     return <AppContext.Provider value={globalData} >
         {children}
