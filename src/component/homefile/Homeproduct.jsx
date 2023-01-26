@@ -13,11 +13,12 @@ const Homeproduct = () => {
             {products.map((product)=>(<Productprops 
             id={product.id}
             key={product.id}
-            title={product.name}
-            img={product.img}
-            price={product.price}
-            desc={product.desc}
-            />))}
+            {...product}
+            // title={product.name}
+            // img={product.img}
+            // price={product.price}
+            // desc={product.desc}
+            />)).slice(0,13)}...
         </div>
     </div>
   )

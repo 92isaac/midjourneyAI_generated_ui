@@ -10,7 +10,7 @@ export const AppContext = createContext(null)
 
 
 const initialState ={
-  testproducts:[],
+  products:[],
   cart:products,
   toggle:false,
   data:{name:'', email:'', password1:'',password2:''},
@@ -34,6 +34,17 @@ export const AppProvider =({children})=>{
       dispatch({ type: 'GET_PRODUCTS_SUCCESS', payload: products });
     } catch (e) {
       dispatch({ type: "GET_PRODUCTS_ERROR" });
+    }
+  };
+
+  const fetchSingleProducts = async (url) => {
+    dispatch({ type: 'GET_SINGLE_PRODUCT_BEGIN' });
+    try {
+      const response = await axios.get(url);
+      const singleProduct = response.data;
+      dispatch({ type: 'GET_SINGLE_PRODUCT_SUCCESS', payload: singleProduct });
+    } catch (e) {
+      dispatch({ type: 'GET_SINGLE_PRODUCT_ERROR' });
     }
   };
 
@@ -62,6 +73,7 @@ export const AppProvider =({children})=>{
     removeOneItem,
     increase, 
     decrease,
+    fetchSingleProducts,
   }
   
     
