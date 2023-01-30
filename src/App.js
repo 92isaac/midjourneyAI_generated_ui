@@ -7,6 +7,7 @@ import ProductDetails from './component/products/ProductDetails';
 const Home = lazy(()=>(import('./routes/Home')))
 const Product = lazy(()=>(import('./routes/Product')));
 const Cart = lazy(()=>(import('./routes/Cart')));
+const Nomatch = lazy(()=>(import('./component/nomatch/Nomatch')));
 
 function App() {
   const data = useGlobalContext()
@@ -19,9 +20,10 @@ function App() {
      <Route path='/products' element={<Product />}/>
      <Route path='/products/:id' element={<ProductDetails />}/>
      <Route path='/cart' element={<Cart />}/>
+     <Route path='*' element={<Nomatch />} />
     </Routes>
     </Suspense>
-    {/* <Footer /> */}
+    <Footer />
     </>
   );
 }
