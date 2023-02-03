@@ -1,12 +1,14 @@
 import React from 'react'
-import Navbar from '../navbar/Navbar'
-import Slider from '../slider/Slider'
+// import Navbar from '../navbar/Navbar'
+// import Slider from '../slider/Slider'
 import heroimage from '../../asset/mid2.PNG'
+import Navb from '../navbar/Navb'
 
 const Hero = () => {
   return (
     <div className='bg-black text-yellow-50 min-h-0 pb-10'>
-        <Navbar />
+      <Navb />
+        {/* <Navbar /> */}
         {/* w-full flex-col-reverse  */}
     <div className='grid md:flex mx-10 md:flex-row md:mx-24 mt-24'>
         <div className="md:w-8/12" >
