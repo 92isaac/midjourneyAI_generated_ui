@@ -6,6 +6,8 @@ import img5 from '../asset/5.png'
 import img6 from '../asset/6.webp'
 import img7 from '../asset/7.webp'
 import img8 from '../asset/8.webp'
+const randomImage = `https://picsum.photos/id/${Math.floor(Math.random() * 1000)}/500/500`;
+
 
 export const products =[
     {
@@ -151,3 +153,23 @@ export const products2 =[
 ]
 
 
+export const heroText = [
+    {
+        id: 1,
+        name: 'Product 1',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, urna non rhoncus pharetra, ex lacus tempor sapien, eu semper leo mi vel est.',
+        image: randomImage,
+      },
+      {
+        id: 2,
+        name: 'Product 2',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, urna non rhoncus pharetra, ex lacus tempor sapien, eu semper leo mi vel est.',
+        image: randomImage,
+      },
+      {
+        id: 3,
+        name: 'Product 3',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, urna non rhoncus pharetra, ex lacus tempor sapien, eu semper leo mi vel est.',
+        image: randomImage,
+      }
+]

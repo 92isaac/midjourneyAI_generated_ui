@@ -12,11 +12,11 @@ const Footer = () => {
 
     const currYear = new Date().getFullYear()
   return (
-    <div className='bg-black text-white mt-16 mb-0 mx-auto w-full fixed bottom-0'>
+    <div className='bg-black text-white mt-16 mb-0 mx-auto w-full fixed bottom-0 text-sm'>
     <div className='footer-wrapper grid grid-cols-5 mx-1/6'>
         <div className="footer-items">
         <div className="hamburger">
-        <Link to="/"><h3 className=''>
+        <Link to="/"><h3 className='text-2xl'>
           <span>
             ios
           </span>
@@ -29,24 +29,24 @@ const Footer = () => {
         <div className="footer-items">
             <h3>Trips</h3>
             <ul>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Group Trips</li>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Private trips</li>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Saved Trips</li>
+                <li className='m-1 text-xs md:m-2 '>Group Trips</li>
+                <li className='m-1 text-xs md:m-2 '>Private trips</li>
+                <li className='m-1 text-xs md:m-2 '>Saved Trips</li>
             </ul>
         </div>
         <div className="footer-items">
             <h3>Company</h3>
             <ul>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>About Us</li>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Contacts Us </li>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>FAQS</li>
+                <li className='m-1 text-xs md:m-2 '>About Us</li>
+                <li className='m-1 text-xs md:m-2 '>Contacts Us </li>
+                <li className='m-1 text-xs md:m-2 '>FAQS</li>
             </ul>
         </div>
         <div className="footer-items">
             <h3>Legals</h3>
             <ul>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Privacy Policies</li>
-                <li className='m-1 text-xs md:m-2 md:text-lg'>Terms and Conditions</li>
+                <li className='m-1 text-xs md:m-2 '>Privacy Policies</li>
+                <li className='m-1 text-xs md:m-2 '>Terms and Conditions</li>
             </ul>
         </div>
         <div className="footer-items">

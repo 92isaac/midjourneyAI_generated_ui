@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useGlobalContext } from '../../context/Context';
 
 
 const Navb = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const {amount} = useGlobalContext()
+  const {amount, toggle, setToggle} = useGlobalContext()
 
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+ 
 
   return (
     <nav className="flex items-center justify-between flex-wrap  p-6">
@@ -19,11 +16,11 @@ const Navb = () => {
         <span className="font-semibold text-xl tracking-tight">Logo</span>
       </div>
       <div className="block lg:hidden">
-        <button onClick={toggleNavbar} className="flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white">
-        {isOpen ? <FaTimes className='text-2xl'/> : <FaBars className='text-2xl'/>}
+        <button onClick={setToggle} className="flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white">
+        {toggle ? <FaTimes className='text-2xl'/> : <FaBars className='text-2xl'/>}
         </button>
       </div>
-      <div className={`w-full block ${isOpen ? 'flex justify-center' : 'hidden'} lg:flex lg:items-center lg:w-auto`}>
+      <div className={`w-full block ${toggle ? 'flex justify-center' : 'hidden'} lg:flex lg:items-center lg:w-auto`}>
         <div className="text-sm lg:flex-grow">
           <NavLink to="/" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
             Home

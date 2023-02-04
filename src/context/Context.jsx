@@ -64,6 +64,10 @@ export const AppProvider =({children})=>{
     dispatch({type:'DECREASE', payload:id})
   };
 
+  const setToggle=()=>{
+dispatch({type: "TOGGLE"})
+  }
+
   useEffect(() => {
     fetchProducts(url);
   }, []);
@@ -75,6 +79,7 @@ export const AppProvider =({children})=>{
     increase, 
     decrease,
     fetchSingleProducts,
+    setToggle
   }
   
     

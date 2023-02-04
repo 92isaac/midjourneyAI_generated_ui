@@ -17,6 +17,9 @@ const reducer = (state, action) => {
     return { ...state, products_loading: true };
   }
 
+  if(action.type === "TOGGLE"){
+      return { ...state, toggle: !state.toggle };
+  }
   
 
   if (action.type === "GET_PRODUCTS_SUCCESS") {
@@ -28,6 +31,8 @@ const reducer = (state, action) => {
       products_loading: false,
       products: action.payload,
       featured_products,
+      product_error:false,
+
     };
   }
 
@@ -37,7 +42,8 @@ const reducer = (state, action) => {
     return {
       ...state,
       products_loading: false,
-      GET_PRODUCTS_ERROR: true,
+      product_error:true,
+
     };
   }
 
