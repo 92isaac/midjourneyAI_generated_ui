@@ -37,7 +37,6 @@ export const AppProvider =({children})=>{
   };
 
   const fetchSingleProducts = async (s_url) => {
-    // dispatch({ type: 'GET_SINGLE_PRODUCT_BEGIN' });
     try {
       const response = await axios.get(s_url);
       const single_product = response.data;

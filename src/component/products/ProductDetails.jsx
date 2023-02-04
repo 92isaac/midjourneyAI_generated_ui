@@ -7,7 +7,7 @@ import Spinner from "../../data/Spinner";
 import Navb from "../navbar/Navb";
 
 const ProductDetails = () => {
-  const { fetchSingleProducts, single_product, single_product_error, loading } =
+  const { fetchSingleProducts, single_product, single_product_error, loading, increase, decrease, amount } =
     useGlobalContext();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -52,16 +52,23 @@ const ProductDetails = () => {
           <p className="text-teal-500 font-bold mr-2">$ {single_product.price}</p>
           <p className="text-gray-600">/ per item</p>
         </div>
-        <button className="bg-teal-500 text-white py-2 px-4 mt-4 rounded hover:bg-teal-600">
+            <div className="flex gap-10">
+            <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600">
           Add to Cart
         </button>
-        <button
+        <div className="flex gap-10">
+          <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600" onClick={()=>{increase(id)}}>+</button>
+          <h4 className="">0</h4>
+          <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600">-</button>
+        </div>
+        <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600"
           onClick={() => {
             navigate(-1);
           }}
         >
           Back
         </button>
+            </div>
       </div>
         
         </div>}
