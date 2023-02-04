@@ -13,9 +13,7 @@ const reducer = (state, action) => {
   // };
 
 
-  if (action.type === "GET_PRODUCTS_BEGIN") {
-    return { ...state, products_loading: true };
-  }
+
 
   if(action.type === "TOGGLE"){
       return { ...state, toggle: !state.toggle };
@@ -28,7 +26,7 @@ const reducer = (state, action) => {
     );
     return {
       ...state,
-      products_loading: false,
+      loading: false,
       products: action.payload,
       featured_products,
       product_error:false,
@@ -41,28 +39,27 @@ const reducer = (state, action) => {
   if (action.type === "GET_PRODUCTS_ERROR") {
     return {
       ...state,
-      products_loading: false,
+      loading: false,
       product_error:true,
 
     };
   }
 
-
-
-  if (action.type === "GET_SINGLE_PRODUCT_BEGIN") {
-    return {
-      ...state,
-      single_product_loading: true,
-      single_product_error: false,
-    };
-  }
-
+  // if (action.type === "GET_SINGLE_PRODUCT_BEGIN") {
+  //   return {
+  //     ...state,
+  //     single_product_loading: true,
+  //     single_product_error: false,
+  //   };
+  // }
 
   if (action.type === "GET_SINGLE_PRODUCT_SUCCESS") {
     return {
       ...state,
       single_product_loading: false,
       single_product: action.payload,
+  single_product_error: false,
+
     };
   }
 

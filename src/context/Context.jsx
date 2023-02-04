@@ -16,10 +16,10 @@ const initialState ={
   data:{name:'', email:'', password1:'',password2:''},
   total:0,
   amount:0,
-  loading:false,
-  products_loading: false,
+  loading:true,
   products_error: false,
   featured_products: [],
+  single_product_error: false,
 
 }
 
@@ -27,25 +27,24 @@ export const AppProvider =({children})=>{
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const fetchProducts = async (url) => {
-    dispatch({ type: 'GET_PRODUCTS_BEGIN' });
     try {
       const response = await axios.get(url);
       const products = response.data;
       dispatch({ type: 'GET_PRODUCTS_SUCCESS', payload: products });
     } catch (e) {
-      dispatch({ type: "GET_PRODUCTS_ERROR" });
+      dispatch({ type: "GET_PRODUCTS_ERROR", payload:e.message});
     }
   };
 
-  const fetchSingleProducts = async (url) => {
-    dispatch({ type: 'GET_SINGLE_PRODUCT_BEGIN' });
+  const fetchSingleProducts = async (s_url) => {
+    // dispatch({ type: 'GET_SINGLE_PRODUCT_BEGIN' });
     try {
-      const response = await axios.get(url);
+      const response = await axios.get(s_url);
       const single_product = response.data;
       console.log(single_product)
       dispatch({ type: 'GET_SINGLE_PRODUCT_SUCCESS', payload: single_product });
     } catch (e) {
-      dispatch({ type: 'GET_SINGLE_PRODUCT_ERROR' });
+      dispatch({ type: 'GET_SINGLE_PRODUCT_ERROR', payload:e.message });
     }
   };
 

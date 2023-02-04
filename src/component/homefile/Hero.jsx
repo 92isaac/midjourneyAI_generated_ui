@@ -1,7 +1,4 @@
 import React from 'react'
-// import Navbar from '../navbar/Navbar'
-// import Slider from '../slider/Slider'
-import heroimage from '../../asset/mid2.PNG'
 import Navb from '../navbar/Navb'
 import ProductCarousel from '../slider/ProductCarousel'
 

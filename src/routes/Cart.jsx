@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import CartProps from "../component/cart/CartProps";
 import Navbar from "../component/navbar/Navbar";
 import { useGlobalContext } from "../context/Context";
-import { products } from "../data/data";
 import "./cart.css";
 
 const Cart = () => {
