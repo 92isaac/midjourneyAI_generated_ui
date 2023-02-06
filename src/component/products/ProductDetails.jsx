@@ -7,7 +7,7 @@ import Spinner from "../../data/Spinner";
 import Navb from "../navbar/Navb";
 
 const ProductDetails = () => {
-  const { fetchSingleProducts, single_product, single_product_error, loading, increase, decrease, amount } =
+  const { fetchSingleProducts, single_product, single_product_error, loading } =
     useGlobalContext();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -57,7 +57,7 @@ const ProductDetails = () => {
           Add to Cart
         </button>
         <div className="flex gap-10">
-          <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600" onClick={()=>{increase(id)}}>+</button>
+          <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600">+</button>
           <h4 className="">0</h4>
           <button className="bg-black text-white py-2 px-4 mt-4 rounded hover:bg-teal-600">-</button>
         </div>

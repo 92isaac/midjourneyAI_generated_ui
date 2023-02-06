@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import CartProps from "../component/cart/CartProps";
-import Navbar from "../component/navbar/Navbar";
+import Navb from "../component/navbar/Navb";
 import { useGlobalContext } from "../context/Context";
 import "./cart.css";
 
@@ -11,7 +11,7 @@ const Cart = () => {
   console.log(cart)
   return (
     <div className="">
-      <Navbar />
+      <Navb/>
       <div className="flex justify-center items-center flex-col">
         <div>
           <h1>Your Cart Items</h1>

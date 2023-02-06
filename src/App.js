@@ -4,6 +4,7 @@ import { useGlobalContext } from './context/Context';
 import './App.css';
 import Footer from './component/footer/Footer';
 import ProductDetails from './component/products/ProductDetails';
+import Spinner from './data/Spinner';
 const Home = lazy(()=>(import('./routes/Home')))
 const Product = lazy(()=>(import('./routes/Product')));
 const Cart = lazy(()=>(import('./routes/Cart')));
@@ -14,7 +15,7 @@ function App() {
   console.log(data)
   return (
     <>
-    <Suspense fallback={'loading'}>
+    <Suspense fallback={<Spinner />}>
     <Routes>
      <Route path='/' element={<Home />} />
      <Route path='/products' element={<Product />}/>

@@ -20,7 +20,7 @@ const Footer = () => {
           <span>
             ios
           </span>
-          travels
+          Logo
         </h3></Link>
 
         {/* <button onClick={()=>{setToggle(!toggle)}}>{!toggle ? <HiMenu />  :<FaTimes />}</button> */}
