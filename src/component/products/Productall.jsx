@@ -6,6 +6,7 @@ import Error from '../../data/Error'
 
 const Productall = () => {
     const { products, loading, products_error  } = useGlobalContext()
+    console.log(loading)
     console.log(products)
     return (
       <div className='mx-6 mt-10 mb-72 md:mt-6 md:mx-24 '>

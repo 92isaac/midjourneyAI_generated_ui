@@ -27,6 +27,7 @@ export const AppProvider =({children})=>{
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const fetchProducts = async (url) => {
+    dispatch({ type: "GET_PRODUCTS_BEGIN" });
     try {
       const response = await axios.get(url);
       const products = response.data;

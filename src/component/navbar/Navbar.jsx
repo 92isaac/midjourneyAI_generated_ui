@@ -13,6 +13,7 @@ const Navbar = () => {
             <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/products">Product</NavLink></li>
             <li><NavLink to="/cart">Cart<sup>{amount}</sup></NavLink></li>
+            <li><NavLink to="/testing">Testing</NavLink></li>
         </ul>
 
         <div className='hidden bg-amber-500 px-10 py-2 rounded-lg md:flex md:bg-amber-500 md:px-10 md:py-2 md:rounded-lg'><NavLink to='/'>Log In</NavLink></div>

@@ -31,8 +31,8 @@ const Navb = () => {
           <NavLink to="/cart" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
           Cart<sup>{amount}</sup>
           </NavLink>
-          <NavLink to="#contact" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
-            Contact
+          <NavLink to="/testing" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white">
+            Testing
           </NavLink>
         </div>
       </div>

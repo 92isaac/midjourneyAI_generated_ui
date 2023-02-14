@@ -13,6 +13,10 @@ const reducer = (state, action) => {
   // };
 
 
+  if (action.type === "GET_PRODUCTS_BEGIN") {
+    return { ...state, loading: true };
+  }
+
 
 
   if(action.type === "TOGGLE"){

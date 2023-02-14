@@ -12,9 +12,9 @@ const Marketplace = () => {
             <Threerowprodt />
             <Fourprodtslice />
         </div>
-        <div className="second">
+        {/* <div className=" absolute"> */}
             <Sidebar />
-        </div>
+        {/* </div> */}
     <Twoprodtslice />
     </div>
     </div>
